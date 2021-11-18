@@ -14,3 +14,67 @@ AttributeError: 'Namespace' object has no attribute 'params'
 [2021-11-18 12:49:13,815: INFO: prepare_base_model]: base model is saved at artifacts\models\base_model.h5
 [2021-11-18 12:49:13,849: INFO: prepare_base_model]: >>>>> stage prepare a base model completed!<<<<<
 
+[2021-11-18 12:54:42,052: INFO: transfer_learning]: 
+********************
+[2021-11-18 12:54:42,052: INFO: transfer_learning]: >>>>> stage transfer learning started <<<<<
+[2021-11-18 12:54:42,053: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2021-11-18 12:54:43,348: INFO: transfer_learning]: >>>>> stage transfer learning completed!<<<<<
+
+[2021-11-18 13:00:16,944: INFO: transfer_learning]: 
+********************
+[2021-11-18 13:00:16,944: INFO: transfer_learning]: >>>>> stage transfer learning started <<<<<
+[2021-11-18 13:00:16,945: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2021-11-18 13:00:17,781: INFO: transfer_learning]: >>>>> stage transfer learning completed!<<<<<
+
+[2021-11-18 13:02:40,623: INFO: transfer_learning]: 
+********************
+[2021-11-18 13:02:40,623: INFO: transfer_learning]: >>>>> stage transfer learning started <<<<<
+[2021-11-18 13:02:40,624: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2021-11-18 13:02:41,999: ERROR: transfer_learning]: All layers added to a Sequential model should have unique names. Name "dense" is already the name of a layer in this model. Update the `name` argument to pass a unique name.
+Traceback (most recent call last):
+  File "src/transfer_learning.py", line 51, in <module>
+    main(config_path=parsed_args.config)
+  File "src/transfer_learning.py", line 38, in main
+    tf.keras.layers.Dense(2, activation="softmax")
+  File "D:\DEMO_FOR_RECORDING\DeepLearning_ANN\Transfer_learning_demo\Transfer-learning-example\env\lib\site-packages\tensorflow\python\training\tracking\base.py", line 530, in _method_wrapper
+    result = method(self, *args, **kwargs)
+  File "D:\DEMO_FOR_RECORDING\DeepLearning_ANN\Transfer_learning_demo\Transfer-learning-example\env\lib\site-packages\keras\utils\traceback_utils.py", line 67, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "D:\DEMO_FOR_RECORDING\DeepLearning_ANN\Transfer_learning_demo\Transfer-learning-example\env\lib\site-packages\keras\engine\sequential.py", line 184, in add
+    'All layers added to a Sequential model '
+ValueError: All layers added to a Sequential model should have unique names. Name "dense" is already the name of a layer in this model. Update the `name` argument to pass a unique name.
+[2021-11-18 13:03:09,810: INFO: transfer_learning]: 
+********************
+[2021-11-18 13:03:09,810: INFO: transfer_learning]: >>>>> stage transfer learning started <<<<<
+[2021-11-18 13:03:09,811: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2021-11-18 13:03:10,612: ERROR: transfer_learning]: 'output layer/' is not a valid root scope name. A root scope name has to match the following pattern: ^[A-Za-z0-9.][A-Za-z0-9_.\\/>-]*$
+Traceback (most recent call last):
+  File "src/transfer_learning.py", line 51, in <module>
+    main(config_path=parsed_args.config)
+  File "src/transfer_learning.py", line 38, in main
+    tf.keras.layers.Dense(2, activation="softmax", name="output layer")
+  File "D:\DEMO_FOR_RECORDING\DeepLearning_ANN\Transfer_learning_demo\Transfer-learning-example\env\lib\site-packages\tensorflow\python\training\tracking\base.py", line 530, in _method_wrapper
+    result = method(self, *args, **kwargs)
+  File "D:\DEMO_FOR_RECORDING\DeepLearning_ANN\Transfer_learning_demo\Transfer-learning-example\env\lib\site-packages\keras\utils\traceback_utils.py", line 67, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "D:\DEMO_FOR_RECORDING\DeepLearning_ANN\Transfer_learning_demo\Transfer-learning-example\env\lib\contextlib.py", line 112, in __enter__
+    return next(self.gen)
+ValueError: 'output layer/' is not a valid root scope name. A root scope name has to match the following pattern: ^[A-Za-z0-9.][A-Za-z0-9_.\\/>-]*$
+[2021-11-18 13:03:19,812: INFO: transfer_learning]: 
+********************
+[2021-11-18 13:03:19,812: INFO: transfer_learning]: >>>>> stage transfer learning started <<<<<
+[2021-11-18 13:03:19,813: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2021-11-18 13:03:20,653: INFO: transfer_learning]: >>>>> stage transfer learning completed!<<<<<
+
+[2021-11-18 13:10:07,677: INFO: transfer_learning]: 
+********************
+[2021-11-18 13:10:07,677: INFO: transfer_learning]: >>>>> stage transfer learning started <<<<<
+[2021-11-18 13:10:07,679: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2021-11-18 13:10:43,334: INFO: transfer_learning]: >>>>> stage transfer learning completed!<<<<<
+
+[2021-11-18 13:12:37,302: INFO: transfer_learning]: 
+********************
+[2021-11-18 13:12:37,302: INFO: transfer_learning]: >>>>> stage transfer learning started <<<<<
+[2021-11-18 13:12:37,303: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2021-11-18 13:13:12,284: INFO: transfer_learning]: >>>>> stage transfer learning completed!<<<<<
+
