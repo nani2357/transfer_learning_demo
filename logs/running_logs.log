@@ -1,0 +1,16 @@
+[2021-11-18 12:48:02,754: INFO: prepare_base_model]: 
+********************
+[2021-11-18 12:48:02,755: INFO: prepare_base_model]: >>>>> stage prepare a base model started <<<<<
+[2021-11-18 12:48:02,755: ERROR: prepare_base_model]: 'Namespace' object has no attribute 'params'
+Traceback (most recent call last):
+  File "src/prepare_base_model.py", line 69, in <module>
+    main(config_path=parsed_args.config, params_path=parsed_args.params)
+AttributeError: 'Namespace' object has no attribute 'params'
+[2021-11-18 12:48:29,314: INFO: prepare_base_model]: 
+********************
+[2021-11-18 12:48:29,314: INFO: prepare_base_model]: >>>>> stage prepare a base model started <<<<<
+[2021-11-18 12:48:29,315: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2021-11-18 12:49:13,442: INFO: common]: created directory at: artifacts\models
+[2021-11-18 12:49:13,815: INFO: prepare_base_model]: base model is saved at artifacts\models\base_model.h5
+[2021-11-18 12:49:13,849: INFO: prepare_base_model]: >>>>> stage prepare a base model completed!<<<<<
+
