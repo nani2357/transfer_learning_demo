@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Transfer-learning-example
 Transfer-learning-example
 ## STEPS -
@@ -26,3 +27,6 @@ pip install -r requirements.txt
 ```
 
 ### STEP 06- commit and push the changes to the remote repository
+=======
+# transfer_learning_demo
+>>>>>>> 210ea305e8ea0a962902ae79ba30b878f45856e6
